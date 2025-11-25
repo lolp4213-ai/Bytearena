@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basket - ByteArena</title>
+  <link rel="stylesheet" href="/css/basket.css"/>
+</head>
+<style>
+/* # background gradient animation */
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(-25deg, #270000, #000000, #270000, #000000);
+      background-size: 200% 400%;
+      animation: gradient 10s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 50% 0%; }
+      50% { background-position: 50% 50%; }
+      100% { background-position: 50% 50%; }
+    }
+</style>
+<body>
+  <header class="container">
+    <a class="logo" href="/bytearena">BYTEARENA</a>
+    <nav>
+      <ul>
+        <li><a href="/bytearena">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li>
+          <a href="/portfolio" id="basket-icon">
+            Basket <span id="basket-count" style="background:#c00;color:#fff;border-radius:50%;padding:2px 8px;font-size:14px;margin-left:4px;">0</span>
+          </a>
+        </li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/register">Register</a></li>
+        <li class="btn"><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Basket</h1>
+    <div id="basket-list"></div>
+  </main>
+  <script src="/static/js/auth.js"></script>
+  <script src="/static/js/basket.js"></script>
+  <script>
+    function updateBasketCount() {
+      let basket = JSON.parse(localStorage.getItem('basket') || '[]');
+      document.getElementById('basket-count').textContent = basket.length;
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      updateBasketCount();
+      document.addEventListener('basket-updated', updateBasketCount);
+    });
+    // Animate basket icon
+    function animateBasketIcon() {
+      const icon = document.getElementById('basket-icon');
+      if (!icon) return;
+      icon.style.transition = 'transform 0.3s';
+      icon.style.transform = 'scale(1.2)';
+      setTimeout(() => { icon.style.transform = 'scale(1)'; }, 300);
+    }
+    window.animateBasketIcon = animateBasketIcon;
+  </script>
+</body>
+</html>

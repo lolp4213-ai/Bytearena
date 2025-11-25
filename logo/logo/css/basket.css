@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+a { text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 16px
+}
+
+#basket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+#basket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.block {
+  background: linear-gradient(135deg, #1a1a1a 80%, #270000 100%);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #000a;
+  padding: 24px 18px;
+  min-width: 260px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.block:hover {
+  box-shadow: 0 4px 32px #c00a;
+}
+.block img {
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px #0008;
+}
+.block span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffb;
+}
+.block p {
+  margin: 4px 0;
+  color: #eee;
+}
+.block button {
+  background: linear-gradient(90deg, #c00 60%, #270000 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 6px 0 0;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #0006;
+  transition: background 0.2s, transform 0.2s;
+}
+.block button:hover {
+  background: linear-gradient(90deg, #ff3c00 60%, #270000 100%);
+  transform: scale(1.08);
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    color: white;
+    font-weight: 900;
+    float: left; 
+    letter-spacing: 1px;
+    padding: 0px 20px;
+
+    
+    
+    
+}
+
+header nav {
+    float: right;
+    width: 50%;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: white;
+}
+
+header nav ul li.button a {
+    background: #fff;
+    color: #121212;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+header nav ul li.button a:hover {
+    background: #808080;
+    color: #fff;
+}
+header nav ul li.btn a {
+    background: #fff;
+    color: #121212;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #808080;
+    color: #fff;
+}
+
+
+
+
+    .btn a {
+      background: #0078f2;
+      padding: 8px 15px;
+      border-radius: 4px;
+      color: #fff !important;
+    }
+
+    /* ==== Основний контейнер ==== */
+    main.container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    /* ==== Кошик з іграми ==== */
+    .basket {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .game-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 120, 242, 0.3);
+    }
+
+    .game-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 15px;
+    }
+
+    .game-title {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .game-price {
+      color: #00b4ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .game-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .btn-buy, .btn-remove {
+      flex: 1;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-buy {
+      background: #0078f2;
+      color: #fff;
+    }
+
+    .btn-buy:hover {
+      background: #005bcc;
+    }
+
+    .btn-remove {
+      background: #333;
+      color: #bbb;
+    }
+
+    .btn-remove:hover {
+      background: #ff3333;
+      color: #fff;
+    }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/profil.css" />
+  <title>User Profile - ByteArena</title>
+
+</head>
+
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="/img/video1.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео тег.
+  </video>
+  <header>
+    <a href="/bytearena" class="logo">BYTEARENA</a>
+    <nav>
+      <ul>
+        <li><a href="/bytearena">Home</a></li>
+        <li><a href="/store">Store</a></li>
+        <li><a href="/library">Library</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li class="btn"><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <!-- Sidebar -->
+    <aside class="profile-sidebar">
+  <img src="/img/game1.jpg" alt="User Avatar" class="profile-avatar">
+      <div class="profile-name">Alex Thunder</div>
+      <div class="profile-username">@alex_thndr</div>
+      <a href="#" class="edit-btn">Edit Profile</a>
+
+      <div class="profile-stats">
+        <div class="stat-box">
+          <div class="stat-number">24</div>
+          <div class="stat-label">Games</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">134h</div>
+          <div class="stat-label">Played</div>
+        </div>
+      </div>
+
+      <div class="friends-section">
+        <h3>Friends Online</h3>
+        <div class="friend">
+          <img src="/img/game1.jpg"  alt="">
+          <span>NovaRider</span>
+        </div>
+        <div class="friend">
+          <img src="/img/game2.jpg" alt="">
+          <span>DarkPixel</span>
+        </div>
+        <div class="friend">
+          <img src="/img/game3.jpg" alt="">
+          <span>EchoFox</span>
+        </div>
+      </div>
+
+      <a href="/logout" class="logout-btn">Logout</a>
+    <a href="/do_logout" class="logout-btn">Logout</a>
+    </aside>
+
+    <!-- Main -->
+    <section class="profile-main">
+      <div class="profile-section">
+        <h2>Recent Activity</h2>
+        <div class="activity-feed">
+          <div class="activity">
+            Unlocked achievement “Sharp Shooter” in *Arena Assault*.
+            <time>2h ago</time>
+          </div>
+          <div class="activity">
+            Purchased *Shadow Legends*.
+            <time>Yesterday</time>
+          </div>
+          <div class="activity">
+            Played *CyberStrike 2077* for 3 hours.
+            <time>2 days ago</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>Owned Games</h2>
+        <div class="game-list">
+          <div class="game-item">
+            <img src="/img/game1.jpg" alt="">
+            <div class="game-title">Horizon</div>
+          </div>
+          <div class="game-item">
+            <img src="/img/game2.jpg" alt="">
+            <div class="game-title">Ghost of Tsushima</div>
+          </div>
+          <div class="game-item">
+            <img src="/img/game3.jpg" alt="">
+            <div class="game-title">God of War</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>Recommended for You</h2>
+        <div class="recommended">
+          <div class="recommended-item">
+            <img src="/img/game4.jpg" alt="">
+            <div class="recommended-info">
+              <div class="recommended-title">Spiderman</div>
+              <div class="recommended-price">1199</div>
+            </div>
+          </div>
+          <div class="recommended-item">
+            <img src="/img/game5.jpg" alt="">
+            <div class="recommended-info">
+              <div class="recommended-title">The last of fast</div>
+              <div class="recommended-price">Free</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>Account Settings</h2>
+        <p>Email: <strong>alex@example.com</strong></p>
+        <p>Region: <strong>EU</strong></p>
+        <p>Subscription: <strong>Premium</strong></p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
